@@ -1,37 +1,25 @@
-Fibonacci and Merge Sort Project
-This project showcases two classic algorithms in separate JavaScript files:
+# Fibonacci and Merge Sort
 
-fibonacci.js: Contains the iterative (fibs) and recursive (fibsRec) implementations of the Fibonacci sequence.
-mergesort.js: Contains the recursive Merge Sort implementation (mergeSort) and its helper function (merge).
-File Structure
-Copy
-project-folder
-├─ fibonacci.js
-└─ mergesort.js
-Fibonacci (fibonacci.js)
-fibs(n): Iteratively generates the first n numbers of the Fibonacci sequence.
-fibsRec(n): Recursively generates the first n numbers of the Fibonacci sequence.
-Example usage within fibonacci.js:
+This project contains implementations of Fibonacci sequence generation (iterative and recursive) and Merge Sort algorithms in JavaScript.
 
-js
-Copy
-console.log(fibs(8));      // [0, 1, 1, 2, 3, 5, 8, 13]
-console.log(fibsRec(8));   // [0, 1, 1, 2, 3, 5, 8, 13]
-Merge Sort (mergesort.js)
-mergeSort(arr): Recursively sorts the provided array using the Merge Sort algorithm.
-merge(arr1, arr2): Merges two sorted arrays into one sorted array.
-Example usage within mergesort.js:
+## Files
 
-js
-Copy
-console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1])); // [0, 1, 1, 2, 3, 5, 8, 13]
-console.log(mergeSort([105, 79, 100, 110]));       // [79, 100, 105, 110]
-How to Run
-Make sure you have Node.js installed.
-In your terminal, navigate to the folder containing these files.
-Run each file with Node:
-bash
-Copy
-node fibonacci.js
-node mergesort.js
-Look at the console output to confirm that everything is working.
+### `fibonacci.js`
+- **`fibs(n)`** — Iterative Fibonacci implementation that generates the first `n` numbers in the Fibonacci sequence.
+- **`fibsRec(n)`** — Recursive Fibonacci implementation that generates the first `n` numbers in the Fibonacci sequence.
+
+### `mergesort.js`
+- **`mergeSort(arr)`** — Recursive Merge Sort implementation that sorts an array of numbers.
+- **`merge(arr1, arr2)`** — Helper function to merge two sorted arrays into one sorted array.
+
+## How to Run
+
+1. **Install Node.js**  
+   Ensure Node.js is installed on your system. You can download it from [nodejs.org](https://nodejs.org).
+
+2. **Run the files**  
+   Open a terminal and navigate to the directory containing the scripts. Execute the following commands to run each file:
+
+   ```bash
+   node fibonacci.js
+   node mergesort.js
